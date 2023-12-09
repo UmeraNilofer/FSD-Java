@@ -1,5 +1,4 @@
 package com.camerarental.bean;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class CameraDetails {
 	private int id;
@@ -8,18 +7,18 @@ public class CameraDetails {
 	private float price;
 	private String status;
 	
-	private static AtomicInteger count = new AtomicInteger(0);
-	
-	public float total;
+	private static int next_id=0;
+	private float total=0;
 
 	public CameraDetails() {
 		super();
 		
 	}
 
-	public CameraDetails(int id, String brand, String model, float price, String status) {
+	public CameraDetails(String brand, String model, float price, String status) {
 		super();
-		this.id = id;
+		this.id = next_id;    
+		next_id++;
 		this.brand = brand;
 		this.model = model;
 		this.price = price;
@@ -51,12 +50,11 @@ public class CameraDetails {
 	}
 	
 	public int getId() {
-		return id+1;
+		return id;
 	}
 
 	public void setId(int id) {
 		this.id =id;
-
 	}
 	
 	
@@ -64,17 +62,25 @@ public class CameraDetails {
 		return status;
 	}
 
-	public void setStatus(boolean status) {
-		if(status==true) {
-			this.status = "Available" ;
-		} else {
-			this.status = "Rented";
-		}
+	public void setStatus(boolean isRented) {
+		if (isRented) {
+            status = "Rented";
+        } else {
+            status = "Available";
+        }
+	}
+	
+	public float getTotal() {
+		return total;
+	}
+
+	public void setTotal(float total) {
+		this.total = total;
 	}
 	
 	@Override
 	public String toString() {
-		return "id=" + id+1 + " brand=" + brand + " model=" + model + " price=" + price + " status="
+		return "id=" + this.id + " brand=" + brand + " model=" + model + " price=" + price + " status="
 				+ status ;
 	}
 	
