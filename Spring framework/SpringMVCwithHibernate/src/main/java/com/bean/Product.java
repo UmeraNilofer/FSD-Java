@@ -5,10 +5,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Entity							//for Hibernate
 @Component						//for Spring
+@Scope("prototype")
 public class Product {
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
