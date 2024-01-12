@@ -66,4 +66,44 @@ public class ProductController {
 		mav.setViewName("products.jsp");
 		return mav;
 	}
+	
+	@RequestMapping(value = "updateProduct",method = RequestMethod.GET)
+	public ModelAndView updateProduct(HttpServletRequest req,HttpSession hs) {
+		int pid = Integer.parseInt(req.getParameter("pid"));
+		System.out.println("product id is "+pid);
+		ModelAndView mav = new ModelAndView();
+				mav.addObject("flag", true);
+		Product p = productService.findProduct(pid);
+		mav.addObject("product", p);
+		List<Product> listOfProduct = productService.findAllProduct();
+		hs.setAttribute("products", listOfProduct);
+		mav.setViewName("products.jsp");
+		return mav;
+	}
+	
+	@RequestMapping(value = "updateProductfromDb",method = RequestMethod.POST)
+	public ModelAndView updateProductfromDb(HttpServletRequest req,HttpSession hs,Product product) {
+		int pid = Integer.parseInt(req.getParameter("pid"));
+		String pname = req.getParameter("pname");
+		float price = Float.parseFloat(req.getParameter("price"));
+		String url = req.getParameter("url");
+		
+		product.setPid(pid);
+		product.setPname(pname);
+		product.setPrice(price);
+		product.setUrl(url);
+		
+		String result = productService.updateProduct(product);
+		ModelAndView mav = new ModelAndView();
+		
+		mav.addObject("msg", result);
+		
+		List<Product> listOfProduct = productService.findAllProduct();
+		hs.setAttribute("products", listOfProduct);
+		
+		mav.setViewName("products.jsp");
+		mav.addObject("flag", false);
+		
+		return mav;
+	}
 }
