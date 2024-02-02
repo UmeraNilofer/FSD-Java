@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        function add() {
+            var a= eval(document.getElementById("a1").value)
+            var b= eval(document.getElementById("a2").value)
+            var result= a+b;
+            document.getElementById("output").innerHTML="Result: "+result;
+        }
+        function minus() {
+            var a= eval(document.getElementById("a1").value)
+            var b= eval(document.getElementById("a2").value)
+            var result= a-b;
+            document.getElementById("output").innerHTML="Result: "+result;
+        }
+    </script>
+</head>
+<body>
+    First num<input type="text" name="a1" id="a1"/><br>
+    Second num<input type="text" name="a2" id="a2"/><br>
+    <input type="button" value="Add" onclick="add()"/> |
+    <input type="button" value="Subtract" onclick="minus()"/> 
+    <div id="output"></div>
+</body>
+</html>

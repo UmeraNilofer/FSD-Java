@@ -1,0 +1,10 @@
+var num = [];
+num.push(100);
+console.log(num);
+var names = ["Sweety", "Pinky"];
+console.log(names);
+var abc = [];
+abc.push("Puppy");
+abc.push(123);
+abc.push(true);
+console.log(abc);
