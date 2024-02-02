@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": null,
+      "name": null,
+      "price": null
+    },
+    {
+      "id": "1",
+      "name": "Computer",
+      "price": 65000,
+      "image": "https://tse2.mm.bing.net/th?id=OIP.Rev49MCG8uGBE9AqNVcyMQHaHa&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "2",
+      "name": "Mobile",
+      "price": 32000,
+      "image": "https://tse2.mm.bing.net/th?id=OIP.thanxWr7pgMNxd9qTRanEAHaKI&pid=Api&P=0&h=180"
+    },
+    {
+      "id": "3",
+      "name": "Laptop",
+      "price": 87000,
+      "image": "https://tse3.mm.bing.net/th?id=OIP.WCCq2nZelTZuFIRbJF7AuAHaEK&pid=Api&P=0&h=180"
+    }
+  ]
+}
