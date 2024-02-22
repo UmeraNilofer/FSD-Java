@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-10T14:56:17 IST" name="MySuite" finished-at="2024-02-10T14:56:17 IST" duration-ms="234">
+    <groups>
+    </groups>
+    <test started-at="2024-02-10T14:56:17 IST" name="LoginTest" finished-at="2024-02-10T14:56:17 IST" duration-ms="111">
+      <class name="com.service.LoginServiceTest">
+        <test-method signature="signUpTest()[pri:0, instance:com.service.LoginServiceTest@25fb8912]" started-at="2024-02-10T14:56:17 IST" name="signUpTest" finished-at="2024-02-10T14:56:17 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTest -->
+      </class> <!-- com.service.LoginServiceTest -->
+      <class name="com.service.TestNGHook">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="beforeTest" finished-at="2024-02-10T14:56:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="beforeClass" finished-at="2024-02-10T14:56:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="beforeMethod" finished-at="2024-02-10T14:56:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test1()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="test1" finished-at="2024-02-10T14:56:17 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="afterMethod" finished-at="2024-02-10T14:56:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="beforeMethod" finished-at="2024-02-10T14:56:17 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test2()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="test2" finished-at="2024-02-10T14:56:17 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="afterMethod" finished-at="2024-02-10T14:56:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="afterClass" finished-at="2024-02-10T14:56:17 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="afterTest" finished-at="2024-02-10T14:56:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.service.TestNGHook -->
+    </test> <!-- LoginTest -->
+    <test started-at="2024-02-10T14:56:17 IST" name="OperationTest" finished-at="2024-02-10T14:56:17 IST" duration-ms="8">
+      <class name="com.service.TestNGHook">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="beforeSuite" finished-at="2024-02-10T14:56:17 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.service.TestNGHook@4738a206]" started-at="2024-02-10T14:56:17 IST" name="afterSuite" finished-at="2024-02-10T14:56:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.service.TestNGHook -->
+      <class name="com.service.OperationServiceTest">
+        <test-method signature="subTest()[pri:0, instance:com.service.OperationServiceTest@27f981c6]" started-at="2024-02-10T14:56:17 IST" name="subTest" finished-at="2024-02-10T14:56:17 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subTest -->
+      </class> <!-- com.service.OperationServiceTest -->
+    </test> <!-- OperationTest -->
+  </suite> <!-- MySuite -->
+</testng-results>

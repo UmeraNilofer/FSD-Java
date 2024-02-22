@@ -9,5 +9,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'demo-app';
+  id:number = 123;
+  name:string = "Ravi Kumar";
+  age:number = 21;
+  result : boolean = true;
 }
